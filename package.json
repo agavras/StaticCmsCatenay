@@ -1,0 +1,24 @@
+{
+  "name": "staticcmscatenay",
+  "version": "1.0.0",
+  "description": "...test",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agavras/StaticCmsCatenay.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agavras/StaticCmsCatenay/issues"
+  },
+  "homepage": "https://github.com/agavras/StaticCmsCatenay#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
