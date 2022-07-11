@@ -322,7 +322,7 @@ body {
 .pages-img {
     width: 100%;
     max-width: 960px;
-    height: 440px;
+    /* height: 440px; */
 }
 
 .page-title {
@@ -330,6 +330,14 @@ body {
     font-size: 2.0em;
     color: rgb(42, 54, 65);
     margin: 20px;
+}
+
+.pages-content {
+    width: 90%;
+    border-radius: 8px;
+    background-color: #d5f3ed;
+    padding: 20px;
+    margin-bottom: 64px;
 }
 
 /* MEDIA QUERRY */
