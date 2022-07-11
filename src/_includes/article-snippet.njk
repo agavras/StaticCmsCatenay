@@ -4,13 +4,13 @@
         <a href="{{ post.url }}">
             <img src="{{post.data.image}}" alt="{{post.data.imageAlt}}">
         </a>
-        <p class="snippet-desc">par <span>{{post.data.author}}</span> le <span>{{ post.date | postDate }}</span></p>
+        <p class="snippet-date">par <span>{{post.data.author}}</span> le <span>{{ post.date | postDate }}</span></p>
     </div>
 
     <div>
         <h3>{{ post.data.title }}</h3>
         <p class="snippet-desc">{{post.data.description}}
-            <a href="{{ post.url }}"> >>> Lire la suite</a>
+            <a href="{{ post.url }}">... Lire la suite >>></a>
         </p>
     </div>
 

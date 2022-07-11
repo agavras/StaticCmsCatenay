@@ -56,7 +56,7 @@ body {
     color: rgb(214, 227, 236);
     background-color: rgb(64, 191, 149);
     border-style: none;
-    border-radius: 20px;
+    border-radius: 5px;
     margin-left: 30px;
 }
 
@@ -283,7 +283,7 @@ body {
 
 /* SNIPPET */
 .article-snippet {
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: rgb(64, 191, 149);
     width: 90%;
     max-width: 960px;
@@ -302,7 +302,7 @@ body {
 .article-snippet img {
     max-width: 320px;
     max-width: 240px;
-    border-radius: 8px;
+    border-radius: 5px;
     /* margin-right: 20px; */
 }
 
@@ -334,7 +334,7 @@ body {
 
 .pages-content {
     width: 90%;
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: #d5f3ed;
     padding: 20px;
     margin-bottom: 64px;
@@ -353,6 +353,6 @@ body {
     .article-snippet img {
         max-width: 160px;
         max-width: 120px;
-        border-radius: 8px;
+        border-radius: 5px;
     }
 }
