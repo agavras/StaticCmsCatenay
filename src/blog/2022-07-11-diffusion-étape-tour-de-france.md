@@ -8,7 +8,7 @@ author: Mathieu FALEZ
 date: 2022-07-11T20:31:27.970Z
 tags:
   - post
-image: /assets/blog/44599766462c299dd318789.jpg
+image: /assets/blog/d4c5a.jpg
 imageAlt: Affiche diffusion étape tour de France
 ---
 **Dimanche 17 Juillet 2022**
