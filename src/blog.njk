@@ -1,12 +1,12 @@
 ---
-title: Blog
+title: Actualités
 layout: base.njk
 ---
 
-<div class="section container">
-  <h1 class="section-title">Recent articles</h1>
+<div">
+  <h1>Articles</h1>
 
-  <ul role="list" class="articles__list flow">
+  <ul role="list">
 
     {%- for post in collections.post | reverse -%}
     {% include 'article-snippet.njk' %}
@@ -14,4 +14,4 @@ layout: base.njk
 
   </ul>
 
-</div>
+  </div>
