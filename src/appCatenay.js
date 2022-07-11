@@ -25,7 +25,7 @@ const mobileMenuPratique = document.getElementById("mobileMenuPratique");
 const mobileMenuDemarches = document.getElementById("mobileMenuDemarches");
 const mobileMenuProfessionnels = document.getElementById("mobileMenuProfessionnels");
 
-const pbody = document.getElementById("pbody");
+let pbody = document.getElementById("pbody");
 
 linkMairie.addEventListener("mouseover", showMenu.bind(null, 1));
 linkAssociations.addEventListener("mouseover", showMenu.bind(null, 2));
