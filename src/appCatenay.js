@@ -59,6 +59,7 @@ function showMobileMenu() {
     mobileMenu.style.display = "block";
     mobileMenu.className = "animate__animated animate__fadeInRight animate__1 animate__faster"
     pbody.style.overflow = "hidden";
+    window.location.href = "#";
 }
 
 function closeMobileMenu() {
