@@ -37,6 +37,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 1;
 }
 
 #menuBarLeft {
@@ -216,6 +217,7 @@ body {
     color: rgb(144, 163, 182);
     font-size: 32px;
     text-align: right;
+    z-index: 2;
 }
 
 #mobileMenu div {
@@ -257,7 +259,7 @@ body {
     max-width: 960px;
     height: 440px;
     margin-top: 32px;
-    background-image: url("./imgAcc.jpg");
+    background-image: url("./assets/imgAcc.jpg");
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 40px;
@@ -272,6 +274,37 @@ body {
     text-shadow: rgba(0, 0, 0, 0.33) 3px 3px 3px;
 }
 
+/* ARTICLES */
+.article-snippet {
+    border-radius: 8px;
+    background-color: rgb(64, 191, 149);
+    width: 90%;
+    max-width: 960px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 20px;
+    display: flex;
+    flex-flow: row;
+}
+
+#article-left {
+    text-align: center;
+}
+
+.article-snippet img {
+    max-width: 320px;
+    max-width: 240px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.article-snippet h3 {
+    font-weight: bolder;
+    font-size: 2.0em;
+    color: rgb(214, 227, 236);
+    text-shadow: rgba(0, 0, 0, 0.33) 3px 3px 3px;
+}
+
 /* MEDIA QUERRY */
 @media (max-width: 860px) {
     #burger {
@@ -280,5 +313,12 @@ body {
 
     #menuBar a {
         display: none;
+    }
+
+    .article-snippet img {
+        max-width: 160px;
+        max-width: 120px;
+        border-radius: 8px;
+        margin-right: 20px;
     }
 }
