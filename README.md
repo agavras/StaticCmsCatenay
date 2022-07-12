@@ -8,9 +8,8 @@ En ligne ici : https://static-cms-catenay.netlify.app/
 
 Bugs :
 
-- la désactivation du sroll sur le menu burger semble être KC.
+- la désactivation du sroll sur le menu burger semble être KC sur Android.
 - actualité déchéterie la seconde image trop grande décale le menu burger.
-- actualité snippet lorsque l'on décent en bas de page et ouvre le menu burger, il ne remonte pas totalement.
 
 ---
 
