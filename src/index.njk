@@ -7,6 +7,13 @@
         <p class="animate__animated animate__fadeInLeft animate__1 animate__slower">Bienvenue à Catenay</p>
     </div>
 
+    <div id="divBtnDarkLight">
+        <a href="#"><i id="xtraLightBtn" class="fa-solid fa-circle"></i></a>
+        <a href="#"><i id="medLightBtn" class="fa-solid fa-circle"></i></a>
+        <a href="#"><i id="medDarkBtn" class="fa-solid fa-circle"></i></a>
+        <a href="#"><i id="xtraDarkBtn" class="fa-solid fa-circle"></i></a>
+    </div>
+
     {%- for post in collections.post | reverse -%}
     {% include 'article-snippet.njk' %}
     {%- endfor %}

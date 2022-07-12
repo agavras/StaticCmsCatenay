@@ -260,8 +260,9 @@ body {
 #divImg {
     width: 100%;
     max-width: 960px;
-    height: 440px;
+    height: 380px;
     margin-top: 32px;
+    margin-bottom: 10px;
     background-image: url("./assets/imgAcc.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -275,6 +276,37 @@ body {
     font-size: 2.5em;
     color: rgb(214, 227, 236);
     text-shadow: rgba(0, 0, 0, 0.33) 3px 3px 3px;
+}
+
+#divBtnDarkLight {
+    width: 100%;
+    max-width: 960px;
+    height: 15px;
+    text-align: right;
+    font-size: 25px;
+    margin-bottom: 5px;
+    padding-right: 10px;
+}
+
+#xtraLightBtn {
+    color: rgb(214, 227, 236);
+    background-color: rgb(255, 255, 255);
+}
+
+#medLightBtn {
+    color: rgb(214, 227, 236);
+    background-color: rgb(64, 191, 149);
+
+}
+
+#medDarkBtn {
+    color: rgb(214, 227, 236);
+    background-color: rgb(128, 128, 128);
+}
+
+#xtraDarkBtn {
+    color: rgb(214, 227, 236);
+    background-color: rgb(0, 0, 0);
 }
 
 /* SNIPPET */
