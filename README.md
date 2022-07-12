@@ -19,8 +19,9 @@ A FAIRE :
   - CMS (utiliser le même concept pour les autres pages et catégories).
   - Inclure des requêtes à une API ex: GoogleMap sur la page contact.
   - Recadrage et optimisation auto des images supplémentaires d'un article.
-  - Mettre à jour le contenu et les images.
   - Ajouter un moteur de recherche interne.
+  - Sauvegarde des préferences (light/dark)... via cookies.
+  - Mettre à jour le contenu et les images.
   - Réaliser dossier à présenter (rapport de stage).
 
   ***
