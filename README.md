@@ -13,6 +13,7 @@ A FAIRE :
   - Mode jour/nuit (XtraDark / MedDark / Medlight / XtraLight).
 
 - pour le projet final si retenue
+  - Retravailler le design
   - CMS (utiliser le même concept pour les autres pages et catégorie).
   - Recadrage auto des images supplémentaires d'un article.
   - Mettre à jour le contenu et les images...
