@@ -30,6 +30,7 @@ A FAIRE :
   - Hébergement gratuit du site.
   - Pas de base de donnée à sécuriser.
   - Mise à jour en ligne via CMS ou via VisualStudioCode syncro avec un GitPull.
+  - Posibilité d'ajouter des branches pour les sauvegardes et les tests.
   - Annonymat du visiteur.
 
 - Points négatifs de cette méthode :
