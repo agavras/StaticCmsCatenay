@@ -36,6 +36,5 @@ A FAIRE :
 - Points négatifs de cette méthode :
 
   - Pas de possibilité de s'incrire à une newsletter (peut être fait séparément).
-  - Pas de sauvegarde des préférences (light/dark mode...).
-  - Pas de statistiques (qui visite quoi).
+  - Pas de statistiques (qui visite quoi ?).
   - Annonymat du visiteur.
