@@ -34,7 +34,10 @@ const subMenuMobilePratique = document.getElementById("subMenuMobilePratique");
 const subMenuMobileDemarches = document.getElementById("subMenuMobileDemarches");
 const subMenuMobileProfessionnels = document.getElementById("subMenuMobileProfessionnels");
 
+const divImg = document.getElementById("divImg");
+
 let pbody = document.getElementById("pbody");
+
 
 linkMairie.addEventListener("mouseover", showMenu.bind(null, 1));
 linkAssociations.addEventListener("mouseover", showMenu.bind(null, 2));
@@ -61,6 +64,8 @@ mobileMenuLoisirs.addEventListener("click", openSubMenuMobile.bind(null, 4));
 mobileMenuPratique.addEventListener("click", openSubMenuMobile.bind(null, 5));
 mobileMenuDemarches.addEventListener("click", openSubMenuMobile.bind(null, 6));
 mobileMenuProfessionnels.addEventListener("click", openSubMenuMobile.bind(null, 7));
+
+divImg.addEventListener("click", showMobileMenu);
 
 document.documentElement.style.setProperty("--animate-duration", ".2s");
 
