@@ -13,10 +13,11 @@ A FAIRE :
   - Mode jour/nuit (XtraDark / MedDark / Medlight / XtraLight).
 
 - pour le projet final si retenue
-  - Optimiser le html, CSS et Javascript.
+  - Refactoriser et optimiser le html, CSS et Javascript.
   - Retravailler le design.
-  - CMS (utiliser le même concept pour les autres pages et catégorie).
-  - Recadrage auto des images supplémentaires d'un article.
+  - CMS (utiliser le même concept pour les autres pages et catégories).
+  - Inclure des requêtes à une API ex: GoogleMap sur la page contact.
+  - Recadrage et optimisation auto des images supplémentaires d'un article.
   - Mettre à jour le contenu et les images.
   - Ajouter un moteur de recherche interne.
   - Réaliser dossier à présenter (rapport de stage).
