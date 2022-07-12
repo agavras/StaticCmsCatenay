@@ -8,7 +8,6 @@ A FAIRE :
 
 - pour la maquette :
 
-  - Finaliser les sous-menu mobile.
   - Date des article en francais.
   - Mode jour/nuit (XtraDark / MedDark / Medlight / XtraLight).
 
