@@ -104,6 +104,14 @@ function showMobileMenu() {
     mobileMenu.className = "animate__animated animate__fadeInRight animate__1 animate__faster"
     pbody.style.overflow = "hidden";
     window.location.href = "#";
+    menuMobileRacine.style.display = "none";
+    subMenuMobileMairie.style.display = "none";
+    subMenuMobileAssociations.style.display = "none";
+    subMenuMobileEcole.style.display = "none";
+    subMenuMobileLoisirs.style.display = "none";
+    subMenuMobilePratique.style.display = "none";
+    subMenuMobileDemarches.style.display = "none";
+    subMenuMobileProfessionnels.style.display = "none";
 }
 
 function closeMobileMenu() {
