@@ -1,14 +1,30 @@
-<header>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StaticCMSCatenay</title>
+    <link rel="stylesheet" href="/styleCatenay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/b26a4293a0.js" crossorigin="anonymous"></script>
+    <script defer src="/appCatenay.js"></script>
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body id="pbody">
     <div id="menuBar">
         <div id="menuBarLeft">
             <button id="btnContact">Contact</button>
         </div>
 
+        <!-- HEADER -->
         <div id="menuBarRight">
             <div id="linkMairie">
                 <a href="#">Mairie</a>
                 <div id="sub-menu-mairie">
-                    <p><a href="#">Actualités</a></p>
+                    <p><a href="/">Actualités</a></p>
                     <p><a href="#">Mot du maire</a></p>
                     <p><a href="#">Equipe municipale</a></p>
                     <p><a href="#">Délibérations</a></p>
@@ -81,14 +97,13 @@
                 </div>
             </div>
 
-            <!-- <i class="fa-solid fa-thumbs-up fa-5x"></i> -->
             <i class="fa-solid fa-bars" id="burger"></i>
         </div>
     </div>
 
     <div id="mobileMenu">
         <i class="fa-solid fa-xmark" id="burgerClose"></i>
-        <div>
+        <div id="menuMobileRacine">
             <p><a href="#" id="mobileMenuMairie">Mairie</a></p>
             <p><a href="#" id="mobileMenuAssociations">Associations</a></p>
             <p><a href="#" id="mobileMenuEcole">École</a></p>
@@ -97,5 +112,16 @@
             <p><a href="#" id="mobileMenuDemarches">Démarches</a></p>
             <p><a href="#" id="mobileMenuProfessionnels">Professionnels</a></p>
         </div>
+
+        <div id="subMenuMobileMairie">
+            <p><a href="/" id="mobileSubMenuActualites">Actualités</a></p>
+            <p><a href="#" id="mobileSubMenuMotDuMaire">Mot du maire</a></p>
+            <p><a href="#" id="mobileSubMenuEquipeMunicipale">Equipe municipale</a></p>
+            <p><a href="#" id="mobileSubMenuDeliberations">Délibérations</a></p>
+            <p><a href="#" id="mobileSubMenuJournauxMunicipaux">Journaux municipaux</a></p>
+            <p><a href="#" id="mobileSubMenuPlu">PLU</a></p>
+            <p><a href="#" id="mobileSubMenuRealisations">Réalisations</a></p>
+            <p><a href="#" id="mobileSubMenuDecouvrirCatenay">Découvrir Catenay</a></p>
+            <p><a href="#" id="mobileSubMenuConseilMunicipalDesJeunes">Conseil Municipal des Jeunes</a></p>
+        </div>
     </div>
-</header>

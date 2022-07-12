@@ -1,143 +1,16 @@
-<!DOCTYPE html>
-<html lang="fr">
+{% include 'header.njk' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StaticCMSCatenay</title>
-    <link rel="stylesheet" href="/styleCatenay.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://kit.fontawesome.com/b26a4293a0.js" crossorigin="anonymous"></script>
-    <script defer src="/appCatenay.js"></script>
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-</head>
+<!-- PAGES -->
+<div id="pageActualites">
 
-<body id="pbody">
-    <div id="menuBar">
-        <div id="menuBarLeft">
-            <button id="btnContact">Contact</button>
-        </div>
+    <img class="pages-img" src="{{ image }}" alt="{{ imageAlt }}">
 
-        <!-- HEADER -->
-        <div id="menuBarRight">
-            <div id="linkMairie">
-                <a href="#">Mairie</a>
-                <div id="sub-menu-mairie">
-                    <p><a href="/">Actualités</a></p>
-                    <p><a href="#">Mot du maire</a></p>
-                    <p><a href="#">Equipe municipale</a></p>
-                    <p><a href="#">Délibérations</a></p>
-                    <p><a href="#">Journaux municipaux</a></p>
-                    <p><a href="#">PLU</a></p>
-                    <p><a href="#">Réalisations</a></p>
-                    <p><a href="#">Découvrir Catenay</a></p>
-                    <p><a href="#">Conseil Municipal des Jeunes</a></p>
-                </div>
-            </div>
-
-            <div id="linkAssociations"><a href="#">Associations</a>
-                <div id="sub-menu-associations">
-                    <p><a href="#">Anciens Combattants</a></p>
-                    <p><a href="#">APEVVV</a></p>
-                    <p><a href="#">ASCC</a></p>
-                    <p><a href="#">Association Catenay-Lubien</a></p>
-                    <p><a href="#">Comité des Fêtes</a></p>
-                    <p><a href="#">Croquet Club</a></p>
-                    <p><a href="#">Feuilles d'Automne</a></p>
-                    <p><a href="#">Lis-moi une histoire</a></p>
-                    <p><a href="#">Team Arion Racing</a></p>
-                    <p><a href="#">Vélo Club</a></p>
-                </div>
-            </div>
-
-            <div id="linkEcole"><a href="#">École</a>
-                <div id="sub-menu-ecole">
-                    <p><a href="#">Sivos</a></p>
-                    <p><a href="#">École primaire</a></p>
-                    <p><a href="#">Garderie</a></p>
-                    <p><a href="#">Transports scolaires</a></p>
-                    <p><a href="#">Vacances</a></p>
-                    <p><a href="#">Jacques Philippe Guillard</a></p>
-                </div>
-            </div>
-
-            <div id="linkLoisirs"><a href="#">Loisirs</a>
-                <div id="sub-menu-loisirs">
-                    <p><a href="#">Centre de loisirs</a></p>
-                    <p><a href="#">Ludisport</a></p>
-                    <p><a href="#">Fête de la Châtaigne</a></p>
-                    <p><a href="#">Promenade à Catenay</a></p>
-                </div>
-            </div>
-
-            <div id="linkPratique"><a href="#">Pratique</a>
-                <div id="sub-menu-pratique">
-                    <p><a href="#">Assistantes maternelles</a></p>
-                    <p><a href="#">Contacts</a></p>
-                    <p><a href="#">Déchets</a></p>
-                    <p><a href="#">Frelons asiatiques</a></p>
-                    <p><a href="#">Transports urbains</a></p>
-                    <p><a href="#">Salles</a></p>
-                </div>
-            </div>
-
-            <div id="linkDemarches"><a href="#">Démarches</a>
-                <div id="sub-menu-demarches">
-                    <p><a href="#">Formalités</a></p>
-                    <p><a href="#">Documents à conserver</a></p>
-                    <p><a href="#">Urbanisme</a></p>
-                </div>
-            </div>
-
-            <div id="linkProfessionnels"><a href="#">Professionnels</a>
-                <div id="sub-menu-professionnels">
-                    <p><a href="#">Artisans</a></p>
-                    <p><a href="#">Sociétés</a></p>
-                </div>
-            </div>
-
-            <i class="fa-solid fa-bars" id="burger"></i>
-        </div>
+    <h1 class="page-title">
+        {{ title }}
+    </h1>
+    <div class="pages-content">
+        {{ content | safe }}
     </div>
+</div>
 
-    <div id="mobileMenu">
-        <i class="fa-solid fa-xmark" id="burgerClose"></i>
-        <div id="menuMobileRacine">
-            <p><a href="/categories/menuMairie/" id="mobileMenuMairie">Mairie</a></p>
-            <p><a href="#" id="mobileMenuAssociations">Associations</a></p>
-            <p><a href="#" id="mobileMenuEcole">École</a></p>
-            <p><a href="#" id="mobileMenuLoisirs">Loisirs</a></p>
-            <p><a href="#" id="mobileMenuPratique">Pratique</a></p>
-            <p><a href="#" id="mobileMenuDemarches">Démarches</a></p>
-            <p><a href="#" id="mobileMenuProfessionnels">Professionnels</a></p>
-        </div>
-    </div>
-
-    <!-- PAGES -->
-    <div id="pageActualites">
-
-        <img class="pages-img" src="{{ image }}" alt="{{ imageAlt }}">
-
-        <h1 class="page-title">
-            {{ title }}
-        </h1>
-        <div class="pages-content">
-            {{ content | safe }}
-        </div>
-    </div>
-
-    <script>
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                        document.location.href = "/admin/";
-                    });
-                }
-            });
-        }
-    </script>
-</body>
-
-</html>
+{% include 'footer.njk' %}

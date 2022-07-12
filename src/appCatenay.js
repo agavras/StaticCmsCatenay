@@ -17,6 +17,7 @@ const burger = document.getElementById("burger");
 const burgerClose = document.getElementById("burgerClose");
 const mobileMenu = document.getElementById("mobileMenu");
 
+const menuMobileRacine = document.getElementById("menuMobileRacine");
 const mobileMenuMairie = document.getElementById("mobileMenuMairie");
 const mobileMenuAssociations = document.getElementById("mobileMenuAssociations");
 const mobileMenuEcole = document.getElementById("mobileMenuEcole");
@@ -24,6 +25,8 @@ const mobileMenuLoisirs = document.getElementById("mobileMenuLoisirs");
 const mobileMenuPratique = document.getElementById("mobileMenuPratique");
 const mobileMenuDemarches = document.getElementById("mobileMenuDemarches");
 const mobileMenuProfessionnels = document.getElementById("mobileMenuProfessionnels");
+
+const subMenuMobileMairie = document.getElementById("subMenuMobileMairie");
 
 let pbody = document.getElementById("pbody");
 
@@ -45,15 +48,58 @@ subMenuProfessionnels.addEventListener("mouseleave", hideMenu.bind(null, 7));
 
 burger.addEventListener("click", showMobileMenu);
 burgerClose.addEventListener("click", closeMobileMenu);
-mobileMenuMairie.addEventListener("click", closeMobileMenu);
-mobileMenuAssociations.addEventListener("click", closeMobileMenu);
-mobileMenuEcole.addEventListener("click", closeMobileMenu);
-mobileMenuLoisirs.addEventListener("click", closeMobileMenu);
-mobileMenuPratique.addEventListener("click", closeMobileMenu);
-mobileMenuDemarches.addEventListener("click", closeMobileMenu);
-mobileMenuProfessionnels.addEventListener("click", closeMobileMenu);
+mobileMenuMairie.addEventListener("click", openSubMenuMobile.bind(null, 1));
+mobileMenuAssociations.addEventListener("click", openSubMenuMobile.bind(null, 2));
+mobileMenuEcole.addEventListener("click", openSubMenuMobile.bind(null, 3));
+mobileMenuLoisirs.addEventListener("click", openSubMenuMobile.bind(null, 4));
+mobileMenuPratique.addEventListener("click", openSubMenuMobile.bind(null, 5));
+mobileMenuDemarches.addEventListener("click", openSubMenuMobile.bind(null, 6));
+mobileMenuProfessionnels.addEventListener("click", openSubMenuMobile.bind(null, 7));
 
 document.documentElement.style.setProperty("--animate-duration", ".2s");
+
+function openSubMenuMobile(subMenuID) {
+    menuMobileRacine.style.display = "none";
+    if (subMenuID === 1) {
+        subMenuMobileMairie.style.display = "block";
+    }
+    if (subMenuID === 2) {
+        // subMenuMobileAssociations.style.display = "block";
+        // alert("subMenuMobileAssociations");
+        closeMobileMenu()
+        menuMobileRacine.style.display = "block";
+    }
+    if (subMenuID === 3) {
+        // subMenuMobileEcole.style.display = "block";
+        // alert("subMenuMobileEcole");
+        closeMobileMenu()
+        menuMobileRacine.style.display = "block";
+    }
+    if (subMenuID === 4) {
+        // subMenuMobileLoisirs.style.display = "block";
+        // alert("subMenuMobileEcole");
+        closeMobileMenu()
+        menuMobileRacine.style.display = "block";
+    }
+    if (subMenuID === 5) {
+        // subMenuMobilePratique.style.display = "block";
+        // alert("subMenuMobileEcole");
+        closeMobileMenu()
+        menuMobileRacine.style.display = "block";
+    }
+    if (subMenuID === 6) {
+        // subMenuMobileDemarches.style.display = "block";
+        // alert("subMenuMobileEcole");
+        closeMobileMenu()
+        menuMobileRacine.style.display = "block";
+    }
+    if (subMenuID === 7) {
+        // subMenuMobileProfessionnels.style.display = "block";
+        // alert("subMenuMobileEcole");
+        closeMobileMenu()
+        menuMobileRacine.style.display = "block";
+    }
+}
 
 function showMobileMenu() {
     mobileMenu.style.display = "block";
