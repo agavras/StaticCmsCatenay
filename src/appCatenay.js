@@ -64,6 +64,22 @@ mobileMenuProfessionnels.addEventListener("click", openSubMenuMobile.bind(null, 
 
 document.documentElement.style.setProperty("--animate-duration", ".2s");
 
+// MOBILE ****************************************
+function showMobileMenu() {
+    mobileMenu.style.display = "block";
+    mobileMenu.className = "animate__animated animate__fadeInRight animate__1 animate__faster";
+    pbody.style.overflow = "hidden";
+    window.location.href = "#";
+    closeMobileSubMenu()
+}
+
+function closeMobileMenu() {
+    mobileMenu.className = "animate__animated animate__fadeOutLeft animate__1";
+    pbody.style.overflow = "auto";
+    menuMobileRacine.style.display = "block";
+    closeMobileSubMenu()
+}
+
 function openSubMenuMobile(subMenuID) {
     menuMobileRacine.style.display = "none";
     subMenuMobileMairie.style.display = "none";
@@ -75,35 +91,38 @@ function openSubMenuMobile(subMenuID) {
     subMenuMobileProfessionnels.style.display = "none";
     if (subMenuID === 1) {
         subMenuMobileMairie.style.display = "block";
+        subMenuMobileMairie.className = "animate__animated animate__fadeInRight animate__1";
     }
     if (subMenuID === 2) {
         subMenuMobileAssociations.style.display = "block";
+        subMenuMobileAssociations.className = "animate__animated animate__fadeInRight animate__1";
     }
     if (subMenuID === 3) {
         subMenuMobileEcole.style.display = "block";
+        subMenuMobileEcole.className = "animate__animated animate__fadeInRight animate__1";
     }
     if (subMenuID === 4) {
         subMenuMobileLoisirs.style.display = "block";
+        subMenuMobileLoisirs.className = "animate__animated animate__fadeInRight animate__1";
 
     }
     if (subMenuID === 5) {
         subMenuMobilePratique.style.display = "block";
+        subMenuMobilePratique.className = "animate__animated animate__fadeInRight animate__1";
 
     }
     if (subMenuID === 6) {
         subMenuMobileDemarches.style.display = "block";
+        subMenuMobileDemarches.className = "animate__animated animate__fadeInRight animate__1";
 
     }
     if (subMenuID === 7) {
         subMenuMobileProfessionnels.style.display = "block";
+        subMenuMobileProfessionnels.className = "animate__animated animate__fadeInRight animate__1";
     }
 }
 
-function showMobileMenu() {
-    mobileMenu.style.display = "block";
-    mobileMenu.className = "animate__animated animate__fadeInRight animate__1 animate__faster"
-    pbody.style.overflow = "hidden";
-    window.location.href = "#";
+function closeMobileSubMenu() {
     subMenuMobileMairie.style.display = "none";
     subMenuMobileAssociations.style.display = "none";
     subMenuMobileEcole.style.display = "none";
@@ -113,19 +132,8 @@ function showMobileMenu() {
     subMenuMobileProfessionnels.style.display = "none";
 }
 
-function closeMobileMenu() {
-    mobileMenu.className = "animate__animated animate__fadeOutLeft animate__1"
-    pbody.style.overflow = "auto";
-    menuMobileRacine.style.display = "block";
-    subMenuMobileMairie.style.display = "none";
-    subMenuMobileAssociations.style.display = "none";
-    subMenuMobileEcole.style.display = "none";
-    subMenuMobileLoisirs.style.display = "none";
-    subMenuMobilePratique.style.display = "none";
-    subMenuMobileDemarches.style.display = "none";
-    subMenuMobileProfessionnels.style.display = "none";
-}
 
+// DESKTOP ****************************************
 function showMenu(menuID) {
     if (menuID === 1) {
         subMenuMairie.style.display = "block";
