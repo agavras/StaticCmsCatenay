@@ -18,4 +18,5 @@ A FAIRE :
   - CMS (utiliser le même concept pour les autres pages et catégorie).
   - Recadrage auto des images supplémentaires d'un article.
   - Mettre à jour le contenu et les images.
+  - Ajouter un moteur de recherche interne.
   - Réaliser dossier à présenter (rapport de stage).
