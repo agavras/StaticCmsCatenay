@@ -8,6 +8,7 @@ En ligne ici : https://static-cms-catenay.netlify.app/
 
 Bugs :
 
+- Tablette au format landscape affiche le menu dektop et non mobile.
 - la désactivation du sroll sur le menu burger semble être KC sur Android.
 - actualité déchéterie la seconde image trop grande décale le menu burger.
 

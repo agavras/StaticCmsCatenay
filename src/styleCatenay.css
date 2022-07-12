@@ -214,6 +214,7 @@ body {
     font-size: 32px;
     text-align: right;
     z-index: 2;
+    overflow: hidden;
 }
 
 #mobileMenu div {

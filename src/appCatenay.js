@@ -71,6 +71,7 @@ document.documentElement.style.setProperty("--animate-duration", ".2s");
 
 // MOBILE ****************************************
 function showMobileMenu() {
+    burger.style.display = "none";
     mobileMenu.style.display = "block";
     mobileMenu.className = "animate__animated animate__fadeInRight animate__1 animate__faster";
     pbody.style.overflow = "hidden";
@@ -79,6 +80,7 @@ function showMobileMenu() {
 }
 
 function closeMobileMenu() {
+    burger.style.display = "block";
     mobileMenu.className = "animate__animated animate__fadeOutLeft animate__1";
     pbody.style.overflow = "auto";
     menuMobileRacine.style.display = "block";
