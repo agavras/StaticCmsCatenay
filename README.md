@@ -4,6 +4,15 @@ test de cms génerant des pages statiques.
 
 En ligne ici : https://static-cms-catenay.netlify.app/
 
+---
+
+Bugs :
+
+- actualité déchéterie la seconde image trop grande décale le menu burger.
+- actualité snippet lorsque l'on décent en bas de page et referme le menu mobile, il ne remonte pas totalement.
+
+---
+
 A FAIRE :
 
 - pour la maquette :
