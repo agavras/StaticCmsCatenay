@@ -13,6 +13,7 @@ A FAIRE :
   - Mode jour/nuit (XtraDark / MedDark / Medlight / XtraLight).
 
 - pour le projet final si retenue
+
   - Refactoriser et optimiser le html, CSS et Javascript.
   - Retravailler le design.
   - CMS (utiliser le même concept pour les autres pages et catégories).
@@ -21,3 +22,19 @@ A FAIRE :
   - Mettre à jour le contenu et les images.
   - Ajouter un moteur de recherche interne.
   - Réaliser dossier à présenter (rapport de stage).
+
+  ***
+
+- Points positifs de cette méthode :
+
+  - Hébergement gratuit du site.
+  - Pas de base de donnée à sécuriser.
+  - Mise à jour en ligne via CMS ou via VisualStudioCode syncro avec un GitPull.
+  - Annonymat du visiteur.
+
+- Points négatifs de cette méthode :
+
+  - Pas de possibilité de s'incrire à une newsletter (peut être fait séparément).
+  - Pas de sauvegarde des préférences (light/dark mode...).
+  - Pas de statistiques (qui visite quoi).
+  - Annonymat du visiteur.
