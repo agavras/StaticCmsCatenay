@@ -10,14 +10,9 @@ Bugs :
 
 - Tablette au format landscape affiche le menu dektop et non mobile.
 
-- la désactivation du sroll sur le menu burger semble être KC sur Android.
+- la désactivation du scroll sur le menu burger semble être KC sur Android.
 
 - actualité déchéterie la seconde image trop grande décale le menu burger.
-
-- depuis background-attachment: fixed;
-  - firefox probleme de cadrage img accueil sur pc
-  - safari img accueil ne s'affiche pas sur ios
-  - chrome img accueil ne s'affiche pas sur ios
 
 ---
 
