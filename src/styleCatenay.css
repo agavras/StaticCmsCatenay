@@ -5,27 +5,43 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
+html {
+    /* scroll-behavior: smooth; */
+    --bgColor: rgb(214, 227, 236);
+    --accentColor: rgb(64, 191, 149);
+    --whiteColor: rgb(255, 255, 255);
+    --lFocusColor: rgb(42, 54, 65);
+    --tFocusColor: rgb(42, 54, 65);
+    --pgColor: rgb(213, 243, 237);
+    --swColor1: rgb(144, 163, 182);
+    --swColor2: rgb(64, 191, 149);
+    --swColor3: rgb(144, 163, 182);
+    --swColor4: rgb(144, 163, 182);
+    --snippetColor: rgb(64, 191, 149);
+    --lmenuColor: rgb(144, 163, 182);
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgb(214, 227, 236);
+    background: var(--bgColor);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(64, 191, 149);
+    background: var(--accentColor);
 }
 
 body {
-    background-color: rgb(214, 227, 236);
+    background-color: var(--bgColor);
     display: flex;
     justify-content: center;
 }
 
 /* MENU DESKTOP */
 #menuBar {
-    background-color: rgb(214, 227, 236);
+    background-color: var(--bgColor);
     width: 100%;
     max-width: 960px;
     height: 64px;
@@ -49,15 +65,15 @@ body {
     height: 35px;
     font-weight: bold;
     font-size: 1.1em;
-    color: rgb(214, 227, 236);
-    background-color: rgb(64, 191, 149);
+    color: var(--bgColor);
+    background-color: var(--accentColor);
     border-style: none;
     border-radius: 5px;
     margin-left: 30px;
 }
 
 #btnContact:hover {
-    color: rgb(255, 255, 255);
+    color: var(--whiteColor);
 }
 
 #menuBarRight {
@@ -70,14 +86,14 @@ body {
 
 #menuBar a {
     text-decoration: none;
-    color: rgb(144, 163, 182);
+    color: var(--lmenuColor);
     padding-right: 30px;
     font-weight: bold;
     font-size: 1.1em;
 }
 
 #menuBar a:hover {
-    color: rgb(64, 191, 149);
+    color: var(--accentColor);
 }
 
 #linkMairie {
@@ -89,7 +105,7 @@ body {
     width: 300px;
     display: none;
     position: absolute;
-    background-color: rgb(214, 227, 236);
+    background-color: var(--bgColor);
     margin-top: 20px;
     left: 0px;
     padding: 15px;
@@ -105,7 +121,7 @@ body {
     width: 300px;
     display: none;
     position: absolute;
-    background-color: rgb(214, 227, 236);
+    background-color: var(--bgColor);
     margin-top: 20px;
     left: -40px;
     padding: 15px;
@@ -121,7 +137,7 @@ body {
     width: 300px;
     display: none;
     position: absolute;
-    background-color: rgb(214, 227, 236);
+    background-color: var(--bgColor);
     margin-top: 20px;
     left: -80px;
     padding: 15px;
@@ -137,7 +153,7 @@ body {
     width: 300px;
     display: none;
     position: absolute;
-    background-color: rgb(214, 227, 236);
+    background-color: var(--bgColor);
     margin-top: 20px;
     left: -120px;
     padding: 15px;
@@ -153,7 +169,7 @@ body {
     width: 300px;
     display: none;
     position: absolute;
-    background-color: rgb(214, 227, 236);
+    background-color: var(--bgColor);
     margin-top: 20px;
     right: -50px;
     padding: 15px;
@@ -169,7 +185,7 @@ body {
     width: 300px;
     display: none;
     position: absolute;
-    background-color: rgb(214, 227, 236);
+    background-color: var(--bgColor);
     margin-top: 20px;
     right: -10px;
     padding: 15px;
@@ -185,7 +201,7 @@ body {
     width: 300px;
     display: none;
     position: absolute;
-    background-color: rgb(214, 227, 236);
+    background-color: var(--bgColor);
     margin-top: 20px;
     right: 30px;
     padding: 15px;
@@ -196,21 +212,21 @@ body {
 #burger {
     font-size: 32px;
     margin-right: 30px;
-    color: rgb(144, 163, 182);
+    color: var(--lFocusColor);
     display: none;
 }
 
 #burger:hover {
-    color: rgb(64, 191, 149);
+    color: var(--accentColor);
 }
 
 #mobileMenu {
-    background-color: rgb(214, 227, 236);
+    background-color: var(--bgColor);
     width: 100%;
     height: 100vh;
     display: none;
     position: absolute;
-    color: rgb(144, 163, 182);
+    color: var(--lFocusColor);
     font-size: 32px;
     text-align: right;
     z-index: 2;
@@ -224,11 +240,11 @@ body {
 
 #mobileMenu a {
     text-decoration: none;
-    color: rgb(144, 163, 182);
+    color: var(--lFocusColor);
 }
 
 #mobileMenu a:hover {
-    color: rgb(64, 191, 149);
+    color: var(--accentColor);
 }
 
 #burgerClose {
@@ -237,23 +253,23 @@ body {
 }
 
 #burgerClose:hover {
-    color: rgb(64, 191, 149);
+    color: var(--accentColor);
 }
 
 /* PAGES */
 #pageActualites {
-    background-color: rgb(214, 227, 236);
+    background-color: var(--bgColor);
     width: 100%;
     max-width: 960px;
     position: absolute;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    color: rgb(42, 54, 65);
+    color: var(--tFocusColor);
 }
 
 #pageActualites a {
-    color: rgb(42, 54, 65);
+    color: var(--tFocusColor);
     font-weight: bold;
     font-size: 1.0em;
 }
@@ -290,30 +306,30 @@ body {
 }
 
 #xtraLightBtn {
-    color: rgb(214, 227, 236);
-    background-color: rgb(255, 255, 255);
+    color: var(--bgColor);
+    background-color: var(--swColor1);
 }
 
 #medLightBtn {
-    color: rgb(214, 227, 236);
-    background-color: rgb(64, 191, 149);
+    color: var(--bgColor);
+    background-color: var(--swColor2);
 
 }
 
 #medDarkBtn {
-    color: rgb(214, 227, 236);
-    background-color: rgb(128, 128, 128);
+    color: var(--bgColor);
+    background-color: var(--swColor3);
 }
 
 #xtraDarkBtn {
-    color: rgb(214, 227, 236);
-    background-color: rgb(0, 0, 0);
+    color: var(--bgColor);
+    background-color: var(--swColor4);
 }
 
 /* SNIPPET */
 .article-snippet {
     border-radius: 5px;
-    background-color: rgb(64, 191, 149);
+    background-color: var(--snippetColor);
     width: 90%;
     max-width: 960px;
     margin-top: 32px;
@@ -326,6 +342,7 @@ body {
 #article-left {
     text-align: center;
     padding: 10px;
+    color: var(--lFocusColor);
 }
 
 .article-snippet img {
@@ -338,13 +355,14 @@ body {
 .article-snippet h3 {
     font-weight: bold;
     font-size: 2.0em;
-    color: rgb(214, 227, 236);
-    text-shadow: rgba(0, 0, 0, 0.33) 3px 3px 3px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.8) 2.5px 2.5px 3px;
 }
 
 .snippet-desc {
     font-weight: bold;
     font-size: 1.0em;
+    color: var(--lFocusColor);
 }
 
 /* FULL PAGES */
@@ -357,14 +375,14 @@ body {
 .page-title {
     font-weight: normal;
     font-size: 2.0em;
-    color: rgb(42, 54, 65);
+    color: var(--tFocusColor);
     margin: 20px;
 }
 
 .pages-content {
     width: 90%;
     border-radius: 5px;
-    background-color: #d5f3ed;
+    background-color: var(--pgColor);
     padding: 20px;
     margin-bottom: 64px;
 }

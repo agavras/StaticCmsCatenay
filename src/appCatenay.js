@@ -38,6 +38,10 @@ const divImg = document.getElementById("divImg");
 
 let pbody = document.getElementById("pbody");
 
+xtraLightBtn = document.getElementById("xtraLightBtn");
+medLightBtn = document.getElementById("medLightBtn");
+medDarkBtn = document.getElementById("medDarkBtn");
+xtraDarkBtn = document.getElementById("xtraDarkBtn");
 
 linkMairie.addEventListener("mouseover", showMenu.bind(null, 1));
 linkAssociations.addEventListener("mouseover", showMenu.bind(null, 2));
@@ -66,6 +70,11 @@ mobileMenuDemarches.addEventListener("click", openSubMenuMobile.bind(null, 6));
 mobileMenuProfessionnels.addEventListener("click", openSubMenuMobile.bind(null, 7));
 
 divImg.addEventListener("click", showMobileMenu);
+
+xtraLightBtn.addEventListener("click", changeCSSVariables.bind(null, 1));
+medLightBtn.addEventListener("click", changeCSSVariables.bind(null, 2));
+medDarkBtn.addEventListener("click", changeCSSVariables.bind(null, 3));
+xtraDarkBtn.addEventListener("click", changeCSSVariables.bind(null, 4));
 
 document.documentElement.style.setProperty("--animate-duration", ".2s");
 
@@ -215,5 +224,61 @@ function hideMenu() {
     subMenuPratique.style.display = "none";
     subMenuDemarches.style.display = "none";
     subMenuProfessionnels.style.display = "none";
+}
+
+// CSS VARIABLES
+function changeCSSVariables(cBind) {
+    if (cBind === 1) {
+        document.documentElement.style.setProperty("--bgColor", "rgb(255, 255, 255)");
+        document.documentElement.style.setProperty("--accentColor", "rgb(64, 191, 149)");
+        document.documentElement.style.setProperty("--whiteColor", "rgb(255, 255, 255)");
+        document.documentElement.style.setProperty("--lFocusColor", "rgb(42, 54, 65)");
+        document.documentElement.style.setProperty("--tFocusColor", "rgb(42, 54, 65)");
+        document.documentElement.style.setProperty("--pgColor", "rgb(213, 243, 237)");
+        document.documentElement.style.setProperty("--swColor1", "rgb(64, 191, 149)");
+        document.documentElement.style.setProperty("--swColor2", "rgb(144, 163, 182)");
+        document.documentElement.style.setProperty("--swColor3", "rgb(144, 163, 182)");
+        document.documentElement.style.setProperty("--swColor4", "rgb(144, 163, 182)");
+        document.documentElement.style.setProperty("--snippetColor", "rgb(240, 220, 230)");
+    }
+    if (cBind === 2) {
+        document.documentElement.style.setProperty("--bgColor", "rgb(214, 227, 236)");
+        document.documentElement.style.setProperty("--accentColor", "rgb(64, 191, 149)");
+        document.documentElement.style.setProperty("--whiteColor", "rgb(255, 255, 255)");
+        document.documentElement.style.setProperty("--lFocusColor", "rgb(42, 54, 65)");
+        document.documentElement.style.setProperty("--tFocusColor", "rgb(42, 54, 65)");
+        document.documentElement.style.setProperty("--pgColor", "rgb(213, 243, 237)");
+        document.documentElement.style.setProperty("--swColor1", "rgb(144, 163, 182)");
+        document.documentElement.style.setProperty("--swColor2", "rgb(64, 191, 149)");
+        document.documentElement.style.setProperty("--swColor3", "rgb(128, 144, 163, 182)");
+        document.documentElement.style.setProperty("--swColor4", "rgb(144, 163, 182)");
+        document.documentElement.style.setProperty("--snippetColor", "rgb(64, 191, 149)");
+    }
+    if (cBind === 3) {
+        document.documentElement.style.setProperty("--bgColor", "rgb(42, 54, 65)");
+        document.documentElement.style.setProperty("--accentColor", "rgb(64, 191, 149)");
+        document.documentElement.style.setProperty("--whiteColor", "rgb(255, 255, 255)");
+        document.documentElement.style.setProperty("--lFocusColor", "rgb(144, 163, 182)");
+        document.documentElement.style.setProperty("--tFocusColor", "rgb(144, 163, 182)");
+        document.documentElement.style.setProperty("--pgColor", "rgb(98, 109, 119)");
+        document.documentElement.style.setProperty("--swColor1", "rgb(144, 163, 182)");
+        document.documentElement.style.setProperty("--swColor2", "rgb(144, 163, 182)");
+        document.documentElement.style.setProperty("--swColor3", "rgb(64, 191, 149)");
+        document.documentElement.style.setProperty("--swColor4", "rgb(144, 163, 182)");
+        document.documentElement.style.setProperty("--snippetColor", "rgb(98, 109, 119)");
+    }
+    if (cBind === 4) {
+        document.documentElement.style.setProperty("--bgColor", "rgb(0, 0, 0)");
+        document.documentElement.style.setProperty("--accentColor", "rgb(64, 191, 149)");
+        document.documentElement.style.setProperty("--whiteColor", "rgb(255, 255, 255)");
+        document.documentElement.style.setProperty("--lFocusColor", "rgb(144, 163, 182)");
+        document.documentElement.style.setProperty("--tFocusColor", "rgb(144, 163, 182)");
+        document.documentElement.style.setProperty("--pgColor", "rgb(98, 109, 119)");
+        document.documentElement.style.setProperty("--swColor1", "rgb(144, 163, 182)");
+        document.documentElement.style.setProperty("--swColor2", "rgb(144, 163, 182)");
+        document.documentElement.style.setProperty("--swColor3", "rgb(144, 163, 182)");
+        document.documentElement.style.setProperty("--swColor4", "rgb(64, 191, 149)");
+        document.documentElement.style.setProperty("--snippetColor", "rgb(42, 54, 65)");
+    }
 }
 
