@@ -335,7 +335,9 @@ body {
     max-width: 960px;
     margin-top: 32px;
     margin-bottom: 32px;
-    padding: 10px;
+    padding: 20px;
+    display: flex;
+    flex-flow: row;
     display: flex;
     flex-flow: row;
 }
@@ -358,12 +360,14 @@ body {
     font-size: 2.0em;
     color: rgb(255, 255, 255);
     text-shadow: rgba(0, 0, 0, 0.8) 2.5px 2.5px 3px;
+    margin-bottom: 10px;
 }
 
 .snippet-desc {
     font-weight: bold;
     font-size: 1.0em;
     color: var(--lFocusColor);
+    margin-bottom: 5px;
 }
 
 /* FULL PAGES */
@@ -390,6 +394,11 @@ body {
 
 /* MEDIA QUERRY */
 @media (max-width: 860px) {
+
+    .article-snippet {
+        flex-flow: column-reverse;
+    }
+
     #burger {
         display: block;
     }
@@ -399,8 +408,8 @@ body {
     }
 
     .article-snippet img {
-        max-width: 160px;
-        max-width: 120px;
+        max-width: 100%;
+        /* max-width: 120px; */
         border-radius: 5px;
     }
 }
