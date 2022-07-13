@@ -258,7 +258,7 @@ function changeCSSVariables(cBind) {
         document.documentElement.style.setProperty("--bgColor", "rgb(42, 54, 65)");
         document.documentElement.style.setProperty("--accentColor", "rgb(64, 191, 149)");
         document.documentElement.style.setProperty("--whiteColor", "rgb(255, 255, 255)");
-        document.documentElement.style.setProperty("--lFocusColor", "rgb(144, 163, 182)");
+        document.documentElement.style.setProperty("--lFocusColor", "rgb(42, 54, 65)");
         document.documentElement.style.setProperty("--tFocusColor", "rgb(144, 163, 182)");
         document.documentElement.style.setProperty("--pgColor", "rgb(98, 109, 119)");
         document.documentElement.style.setProperty("--swColor1", "rgb(144, 163, 182)");
