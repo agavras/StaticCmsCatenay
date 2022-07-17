@@ -302,30 +302,33 @@ body {
     max-width: 960px;
     height: 15px;
     text-align: right;
-    font-size: 25px;
+    font-size: 16px;
     margin-bottom: 5px;
     padding-right: 10px;
 }
 
 #xtraLightBtn {
-    color: var(--bgColor);
-    background-color: var(--swColor1);
+    color: var(--swColor1);
+    /* background-color: var(--bgColor); */
+    margin: 10px;
 }
 
 #medLightBtn {
-    color: var(--bgColor);
-    background-color: var(--swColor2);
-
+    color: var(--swColor2);
+    /* background-color: var(--bgColor); */
+    margin: 10px;
 }
 
 #medDarkBtn {
-    color: var(--bgColor);
-    background-color: var(--swColor3);
+    color: var(--swColor3);
+    /* background-color: var(--bgColor); */
+    margin: 10px;
 }
 
 #xtraDarkBtn {
-    color: var(--bgColor);
-    background-color: var(--swColor4);
+    color: var(--swColor4);
+    /* background-color: var(--bgColor); */
+    margin: 10px;
 }
 
 /* SNIPPET */

@@ -43,13 +43,13 @@ medLightBtn = document.getElementById("medLightBtn");
 medDarkBtn = document.getElementById("medDarkBtn");
 xtraDarkBtn = document.getElementById("xtraDarkBtn");
 
-linkMairie.addEventListener("mouseover", showMenu.bind(null, 1));
-linkAssociations.addEventListener("mouseover", showMenu.bind(null, 2));
-linkEcole.addEventListener("mouseover", showMenu.bind(null, 3));
-linkLoisirs.addEventListener("mouseover", showMenu.bind(null, 4));
-linkPratique.addEventListener("mouseover", showMenu.bind(null, 5));
-linkDemarches.addEventListener("mouseover", showMenu.bind(null, 6));
-linkProfessionnels.addEventListener("mouseover", showMenu.bind(null, 7));
+linkMairie.addEventListener("click", showMenu.bind(null, 1));
+linkAssociations.addEventListener("click", showMenu.bind(null, 2));
+linkEcole.addEventListener("click", showMenu.bind(null, 3));
+linkLoisirs.addEventListener("click", showMenu.bind(null, 4));
+linkPratique.addEventListener("click", showMenu.bind(null, 5));
+linkDemarches.addEventListener("click", showMenu.bind(null, 6));
+linkProfessionnels.addEventListener("click", showMenu.bind(null, 7));
 
 subMenuMairie.addEventListener("mouseleave", hideMenu.bind(null, 1));
 subMenuAssociations.addEventListener("mouseleave", hideMenu.bind(null, 2));
