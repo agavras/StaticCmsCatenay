@@ -39,6 +39,10 @@ body {
     justify-content: center;
 }
 
+body a {
+    text-decoration: none;
+}
+
 /* MENU DESKTOP */
 #menuBar {
     background-color: var(--bgColor);
