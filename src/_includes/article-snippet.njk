@@ -1,16 +1,18 @@
-<a href="{{ post.url }}">
-    <article class="article-snippet">
+<article class="article-snippet">
 
-        <div id="article-left">
+    <div id="article-left">
+        <a href="{{ post.url }}">
             <img src="{{post.data.image}}" alt="{{post.data.imageAlt}}">
+
             <p class="snippet-date">par <span>{{post.data.author}}</span> le <span>{{ post.date | postDate }}</span></p>
-        </div>
+        </a>
+    </div>
 
-        <div>
-
+    <div>
+        <a href="{{ post.url }}">
             <h3>{{ post.data.title }}</h3>
             <p class="snippet-desc">{{post.data.description}}...</p>
-        </div>
+        </a>
+    </div>
 
-    </article>
-</a>
+</article>
